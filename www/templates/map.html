@@ -1,0 +1,26 @@
+<ion-view title="Map">
+
+
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-search"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button ng-click="locate();" class="button button-icon icon ion-pinpoint"></button>
+  </ion-nav-buttons>
+
+
+  <ion-content data-tap-disabled="true">
+
+    <leaflet layers="map.layers" center="map.center" markers="map.markers" ng-if="map"></leaflet>
+    <div class="adic-modal" style="min-height: 0 !important;">
+<pageslide ps-open="checked" ps-side="bottom">
+        <div>            
+            <p>some random content...</p>
+        </div>
+    </pageslide>
+  </div>
+
+  </ion-content>
+
+</ion-view>

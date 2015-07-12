@@ -1,0 +1,94 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+
+    <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i></ion-nav-back-button>
+
+    </ion-nav-bar>
+
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+  </ion-pane>
+
+  <ion-side-menu side="left">
+
+    <header class="bar bar-header bar-stable">
+      <h1 class="title">Filtrar</h1>
+    </header>
+
+    <ion-content class="has-header">
+
+      <ion-list>
+      <label class="item item-input item-select">
+    <div class="input-label">
+      Estados
+    </div>
+    <select id="estado" ng-model="imovel.estado">
+    </select>
+  </label>
+   <label class="item item-input item-select">
+    <div class="input-label">
+      Cidade
+    </div>
+    <select id="cidade" ng-model="imovel.cidade">
+    </select>
+  </label>
+     <label class="item item-input item-select">
+    <div class="input-label">
+      Bairro
+    </div>
+    <select id="bairro" ng-model="imovel.bairro">
+    </select>
+  </label>
+
+        <label class="item item-input item-select">
+    <div class="input-label">
+      Alugar e/ou Vender
+    </div>
+    <select id="operacao" ng-model="imovel.operacao">
+      <option selected>Todos</option>
+      <option >Alugar</option>
+      <option>Vender</option>
+    </select>
+  </label>
+          <label class="item item-input item-select">
+    <div class="input-label">
+      Tipo
+    </div>
+    <select id="tipo" ng-model="imovel.tipo">
+      <option selected>Todos</option>
+      <option>Casa</option>
+      <option>Apartamento</option>
+    </select>
+  </label>
+   <label class="item item-input">
+    <span class="input-label">Preço Minimo</span>
+    <input type="text" id="preco" ng-model="imovel.preco">
+  </label>
+     <label class="item item-input">
+    <span class="input-label">Quartos</span>
+    <input type="text" id="quarto" ng-model="imovel.quarto">
+  </label>
+       <label class="item item-input">
+    <span class="input-label">Banheiros</span>
+    <input type="text" id="banheiro" ng-model="imovel.banheiro">
+  </label>
+  <div class="row">
+   <div class="col text-center">
+     <button class="button button-balanced center" ng-click="buscar(imovel)">
+  Buscar
+</button>
+   </div>
+</div>
+  
+
+      </ion-list>
+
+
+
+    </ion-content>
+
+  </ion-side-menu>
+
+</ion-side-menus>
